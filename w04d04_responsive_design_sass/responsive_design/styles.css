@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
+
+header {
+  height: 160px;
+  background-color: coral;
+}
+
+section {
+  background-color: blue;
+}
+
+section {
+  border: 2px solid black;
+  height: 500px;
+  font-size: 10px;
+}
+
+section div {
+  /* height: 30vh; */
+  width: 10rem;
+  min-width: 100px;
+  max-width: 500px;
+  margin: 20px;
+  line-height: 150px;
+  display: inline-block;
+  background-color: lightpink;
+  text-align: center;
+}
+
+footer {
+  background-color: burlywood;
+  height: 150px;
+}
+
+@media only screen and (min-width: 750px) {
+  section {
+    background-color: green;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  section {
+    background-color: purple;
+  }
+}

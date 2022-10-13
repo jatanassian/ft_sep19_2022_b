@@ -1,0 +1,60 @@
+// Variables
+@import "variables";
+
+div {
+  font-size: $font-size;
+  color: $secondary-color;
+  border: $border;
+  font-weight: bold;
+  text-decoration: $text-decoration;
+}
+
+// Nesting
+
+// <section>
+//  <div>
+//    <p>
+//    </p>
+//  </div>
+//  <aside>
+//  </aside>
+// </section>
+
+section {
+  border: dotted 2px blue;
+
+  div {
+    font-size: 3rem;
+    color: palevioletred;
+
+    p {
+      font-size: $font-size;
+    }
+  }
+
+  aside {
+    width: 300px;
+  }
+}
+
+// Extend
+.header-title {
+  font-size: 50px;
+  color: salmon;
+}
+
+.header {
+  @extend .header-title;
+  color: darkblue;
+}
+
+// Mixins
+@mixin paragraph-styling($padding, $lineHeight) {
+  padding: $padding;
+  line-height: $lineHeight;
+}
+
+.paragraph {
+  @include paragraph-styling(10px, 10px);
+  padding: 40vw;
+}

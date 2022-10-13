@@ -1,0 +1,36 @@
+div {
+  font-size: 20px;
+  color: plum;
+  border: 1px blue solid;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+section {
+  border: dotted 2px blue;
+}
+section div {
+  font-size: 3rem;
+  color: palevioletred;
+}
+section div p {
+  font-size: 20px;
+}
+section aside {
+  width: 300px;
+}
+
+.header-title, .header {
+  font-size: 50px;
+  color: salmon;
+}
+
+.header {
+  color: darkblue;
+}
+
+.paragraph {
+  padding: 10px;
+  line-height: 10px;
+  padding: 40vw;
+}
